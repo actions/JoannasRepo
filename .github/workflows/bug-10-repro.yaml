@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: set env
         run: |
-          echo "TEST_ENV=hello$(67 -as [char])injected=it worked" >> $env:GITHUB_ENV
+          echo "TEST_ENV=hello$(16 -as [char])injected=it worked" >> $env:GITHUB_ENV
           cat $env:GITHUB_ENV
       - name: check env
         run: |
